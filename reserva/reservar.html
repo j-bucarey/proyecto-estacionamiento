@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reserva</title>
+    <!-- Bootswatch Cosmo Theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+    />
+
+    <!--CSS -->
+    <link rel="stylesheet" href="reservar.css" />
+  </head>
+
+  <body>
+    <!-- Barra -->
+    <nav class="navbar navbar-dark bg-primary text-center">
+      <a class="navbar-brand" href="#">Reserva</a>
+    </nav>
+
+    <div class="container">
+      <!-- Comienzo -->
+      <div id="App" class="row pt-5">
+        <!-- Formulario -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Reserva el estacionamiento</h4>
+            </div>
+            <form id="product-form" class="card-body">
+              <!-- Nombre propietario -->
+              <h3>Nombre</h3>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nombre Completo"
+                  class="form-control"
+                />
+              </div>
+              <!-- Patente -->
+              <h3>Patente</h3>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="patente"
+                  placeholder="Patente Vehiculo"
+                  class="form-control"
+                />
+              </div>
+              <!-- Fecha -->
+              <h3>Fecha</h3>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="fecha"
+                  placeholder="Fecha"
+                  class="form-control"
+                />
+              </div>
+              <!-- Tipo de reserva -->
+              <h3>Tipo de reserva</h3>
+              <div class="form-group">
+
+                <input
+                  type="text"
+                  id="reserva"
+                  placeholder="Ingrese su tipo de reserva"
+                  class="form-control"
+                />
+            </div>
+            
+            <input
+            type="submit"
+            value="Guardar"
+            class="btn btn-primary btn-block"
+            />
+            </form>
+          </div>
+
+           <form>
+                <h3>Tipos de reserva</h3>
+                <select>
+                  <option disabled selected ="">Tipos de reserva</option>
+                  <optgroup label="Por hora">
+                    <option>1 hora</option>
+                    <option>2 horas</option>
+                    <option>3 horas</option>
+                    <option>4 horas</option>
+                    <option>5 horas</option>
+                    <option>6 horas</option>
+                    <option>8 horas</option>
+                    <option>9 horas</option>
+                    <option>10 horas</option>
+                    <option>11 horas</option>
+
+                  </optgroup>
+                  <optgroup label="Jornada">
+                    <option>Media Jornada</option>
+                    <option>Jornada completa</option>
+
+                 </select>
+              </form>
+
+        </div>
+
+        <!-- Lista -->
+        <div id="product-list" class="col-md-8"></div>
+      </div>
+    </div>
+
+    <script src="App.js" type="module"></script>
+  </body>
+</html>
